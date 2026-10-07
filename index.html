@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Plantilla de biografía personal con estilo Material Design 3." />
+  <title>Biografía | Nombre de la persona</title>
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Material+Symbols+Outlined"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- =========================
+       HEADER / NAVEGACIÓN
+  ========================== -->
+  <header class="top-app-bar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="material-symbols-outlined">person</span>
+      <span>Mi Biografía</span>
+    </a>
+
+    <button
+      class="icon-button menu-button"
+      id="menuButton"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="mainNav"
+    >
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+
+    <nav class="nav-links" id="mainNav">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#historia">Historia</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#intereses">Intereses</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button
+      class="icon-button"
+      id="themeButton"
+      type="button"
+      aria-label="Cambiar tema"
+      title="Cambiar tema"
+    >
+      <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- =========================
+         HERO / PRESENTACIÓN
+    ========================== -->
+    <section class="hero section" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">BIOGRAFÍA PERSONAL</p>
+
+        <h1>Nombre de la persona</h1>
+
+        <p class="hero-description">
+          Una breve frase que describa a esta persona: quién es, qué hace
+          y qué la caracteriza.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button filled" href="#sobre-mi">
+            <span class="material-symbols-outlined">arrow_downward</span>
+            Conocer más
+          </a>
+
+          <a class="button tonal" href="#contacto">
+            <span class="material-symbols-outlined">mail</span>
+            Contacto
+          </a>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <img
+          src=""
+          alt="Foto de perfil de ejemplo"
+        />
+
+        <div class="profile-card-info">
+          <strong>Nombre completo</strong>
+          <span>Profesión / ocupación</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SOBRE MÍ
+    ========================== -->
+    <section class="section" id="sobre-mi">
+      <div class="section-heading">
+        <p class="eyebrow">CONÓCEME</p>
+        <h2>Sobre mí</h2>
+        <p>
+          Aquí puedes escribir un resumen general sobre la persona,
+          su personalidad, su forma de pensar y aquello que la define.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <article class="card about-text">
+          <span class="material-symbols-outlined card-icon">badge</span>
+          <h3>Presentación</h3>
+
+          <p>
+            Soy <strong>Nombre de la persona</strong>. Nací en
+            <strong>Ciudad / País</strong> y actualmente me dedico a
+            <strong>actividad, carrera o profesión</strong>.
+          </p>
+
+          <p>
+            Me considero una persona curiosa, responsable y creativa.
+            Me gusta aprender nuevas cosas, trabajar en proyectos y
+            mejorar constantemente.
+          </p>
+        </article>
+
+        <aside class="card">
+          <span class="material-symbols-outlined card-icon">info</span>
+          <h3>Datos rápidos</h3>
+
+          <dl class="facts-list">
+            <div>
+              <dt>Nombre</dt>
+              <dd>Nombre completo</dd>
+            </div>
+
+            <div>
+              <dt>Edad</dt>
+              <dd>00 años</dd>
+            </div>
+
+            <div>
+              <dt>Ciudad</dt>
+              <dd>Ciudad, País</dd>
+            </div>
+
+            <div>
+              <dt>Ocupación</dt>
+              <dd>Estudiante / Profesional</dd>
+            </div>
+
+            <div>
+              <dt>Idiomas</dt>
+              <dd>Español, Inglés</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- =========================
+         HISTORIA / LÍNEA DE TIEMPO
+    ========================== -->
+    <section class="section surface-section" id="historia">
+      <div class="section-heading">
+        <p class="eyebrow">MI CAMINO</p>
+        <h2>Historia personal</h2>
+        <p>
+          Esta sección funciona como una pequeña línea de tiempo.
+          Puedes agregar estudios, trabajos, logros o momentos importantes.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-card">
+            <span class="timeline-date">2000 — 2015</span>
+            <h3>Primeros años</h3>
+            <p>
+              Describe aquí la infancia, el lugar donde creció o algún
+              recuerdo importante.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-card">
+            <span class="timeline-date">2016 — 2022</span>
+            <h3>Etapa de formación</h3>
+            <p>
+              Puedes mencionar estudios, cursos, descubrimientos,
+              aficiones o experiencias que marcaron esta etapa.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-card">
+            <span class="timeline-date">2023 — Actualidad</span>
+            <h3>Presente</h3>
+            <p>
+              Explica qué hace actualmente la persona y cuáles son
+              sus objetivos principales.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================
+         HABILIDADES
+    ========================== -->
+    <section class="section" id="habilidades">
+      <div class="section-heading">
+        <p class="eyebrow">CAPACIDADES</p>
+        <h2>Habilidades</h2>
+        <p>
+          Puedes usar esta zona para mostrar conocimientos técnicos,
+          talentos o habilidades personales.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="material-symbols-outlined">code</span>
+          <h3>Programación</h3>
+          <p>HTML, CSS, JavaScript, Kotlin, Python...</p>
+        </article>
+
+        <article class="skill-card">
+          <span class="material-symbols-outlined">palette</span>
+          <h3>Creatividad</h3>
+          <p>Diseño, dibujo, edición o creación de contenido.</p>
+        </article>
+
+        <article class="skill-card">
+          <span class="material-symbols-outlined">groups</span>
+          <h3>Trabajo en equipo</h3>
+          <p>Comunicación, colaboración y organización.</p>
+        </article>
+
+        <article class="skill-card">
+          <span class="material-symbols-outlined">school</span>
+          <h3>Aprendizaje</h3>
+          <p>Interés constante por aprender y mejorar.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================
+         INTERESES
+    ========================== -->
+    <section class="section surface-section" id="intereses">
+      <div class="section-heading">
+        <p class="eyebrow">LO QUE ME GUSTA</p>
+        <h2>Intereses y pasatiempos</h2>
+      </div>
+
+      <div class="chips">
+        <span class="chip">
+          <span class="material-symbols-outlined">computer</span>
+          Tecnología
+        </span>
+
+        <span class="chip">
+          <span class="material-symbols-outlined">music_note</span>
+          Música
+        </span>
+
+        <span class="chip">
+          <span class="material-symbols-outlined">sports_esports</span>
+          Videojuegos
+        </span>
+
+        <span class="chip">
+          <span class="material-symbols-outlined">flight</span>
+          Viajes
+        </span>
+
+        <span class="chip">
+          <span class="material-symbols-outlined">photo_camera</span>
+          Fotografía
+        </span>
+
+        <span class="chip">
+          <span class="material-symbols-outlined">draw</span>
+          Arte
+        </span>
+      </div>
+    </section>
+
+    <!-- =========================
+         METAS
+    ========================== -->
+    <section class="section" id="metas">
+      <div class="section-heading">
+        <p class="eyebrow">HACIA EL FUTURO</p>
+        <h2>Metas personales</h2>
+      </div>
+
+      <div class="goals-grid">
+        <article class="card">
+          <span class="material-symbols-outlined card-icon">flag</span>
+          <h3>Corto plazo</h3>
+          <p>
+            Escribe aquí una meta que se quiera cumplir dentro de
+            los próximos meses.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="material-symbols-outlined card-icon">trending_up</span>
+          <h3>Mediano plazo</h3>
+          <p>
+            Agrega una meta académica, personal o profesional.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="material-symbols-outlined card-icon">rocket_launch</span>
+          <h3>Largo plazo</h3>
+          <p>
+            Describe aquello que la persona desea conseguir en el futuro.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================
+         GALERÍA
+    ========================== -->
+    <section class="section surface-section" id="galeria">
+      <div class="section-heading">
+        <p class="eyebrow">RECUERDOS</p>
+        <h2>Galería</h2>
+        <p>
+          Reemplaza estas imágenes por fotografías personales,
+          proyectos, viajes o momentos importantes.
+        </p>
+      </div>
+
+      <div class="gallery">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+            alt="Personas trabajando en equipo"
+          />
+          <figcaption>Estudios y proyectos</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=80"
+            alt="Viaje y paisaje"
+          />
+          <figcaption>Viajes y experiencias</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+            alt="Computadora y espacio de trabajo"
+          />
+          <figcaption>Tecnología y creatividad</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- =========================
+         FRASE
+    ========================== -->
+    <section class="quote-section">
+      <blockquote>
+        “Aquí puedes colocar una frase personal, una idea que represente
+        a la persona o una cita que la inspire.”
+      </blockquote>
+      <cite>— Nombre de la persona</cite>
+    </section>
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+    <section class="section" id="contacto">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">CONTACTO</p>
+          <h2>¿Quieres saber más?</h2>
+          <p>
+            Puedes colocar aquí redes sociales, correo electrónico
+            o enlaces a proyectos.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:correo@ejemplo.com" class="button filled">
+            <span class="material-symbols-outlined">mail</span>
+            Correo
+          </a>
+
+          <a href="#" class="button tonal">
+            <span class="material-symbols-outlined">link</span>
+            Portafolio
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer>
+    <p>
+      © <span id="currentYear"></span> Nombre de la persona.
+      Hecho con HTML, CSS y un poquito de JavaScript.
+    </p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
